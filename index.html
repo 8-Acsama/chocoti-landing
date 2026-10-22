@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChocoTi-Digital: Plataforma Integral de E-Commerce y Gestión Omnicanal de Chocolates Para Ti. Venta directa de chocolates artesanales y regalos corporativos desde Sucre a todo Bolivia.">
+  <meta name="theme-color" content="#3E2723">
+  <title>ChocoTi-Digital | Chocolates Para Ti - Sucre, Bolivia</title>
+
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- 1. HEADER / NAVEGACIÓN FIJA                               -->
+  <!-- ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      
+      <!-- Logotipo con Escudo Original y Simple -->
+      <a href="#hero" class="brand-logo" aria-label="Inicio ChocoTi-Digital Chocolates Para Ti">
+        <div class="logo-emblem" aria-hidden="true">
+          <!-- Escudo original y simple: diseño vectorial original con vaina de cacao dorada y corona de hojas -->
+          <svg viewBox="0 0 48 48" class="shield-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 3L8 9V22C8 33.2 14.8 41.8 24 45C33.2 41.8 40 33.2 40 22V9L24 3Z" fill="#3E2723" stroke="#C9A227" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M24 7L12 11.5V22C12 30.5 17.1 37.2 24 40C30.9 37.2 36 30.5 36 22V11.5L24 7Z" fill="#5D4037" stroke="#C9A227" stroke-opacity="0.5" stroke-width="1"/>
+            <!-- Vaina de Cacao dorada original estilizada -->
+            <path d="M24 13C20.5 16.5 19 21.5 20.5 26.5C21.8 30.8 24 33.5 24 33.5C24 33.5 26.2 30.8 27.5 26.5C29 21.5 27.5 16.5 24 13Z" fill="#C9A227"/>
+            <path d="M24 13V33.5" stroke="#3E2723" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="24" cy="18" r="1.2" fill="#FFF8E1"/>
+            <circle cx="22.5" cy="23" r="1.2" fill="#FFF8E1"/>
+            <circle cx="25.5" cy="23" r="1.2" fill="#FFF8E1"/>
+            <circle cx="24" cy="28" r="1.2" fill="#FFF8E1"/>
+            <!-- Estrellas ornamentales superiores -->
+            <circle cx="17" cy="13" r="1" fill="#C9A227"/>
+            <circle cx="31" cy="13" r="1" fill="#C9A227"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Chocolates Para Ti</span>
+          <span class="brand-tagline">ChocoTi-Digital • Sucre</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación -->
+      <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Inicio</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#b2b" class="nav-link">Corporativo B2B</a></li>
+          <li><a href="#seguimiento" class="nav-link">Seguimiento</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Acciones de Encabezado: Carrito & Hamburguesa -->
+      <div class="header-actions">
+        <!-- Botón de Carrito -->
+        <button class="cart-trigger" id="cartTrigger" aria-label="Abrir Carrito de compras">
+          <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+          <span class="cart-label-text">Carrito</span>
+        </button>
+
+        <!-- Botón Menú Móvil -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================= -->
+    <!-- 2. HERO SECTION (PORTADA)                                 -->
+    <!-- ========================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop-pattern" aria-hidden="true"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Plataforma Oficial Omnicanal • Sucre, Bolivia
+          </div>
+          
+          <h1 class="hero-title">
+            La tradición emblemática de Sucre, <span class="highlight-gold">ahora a un clic de tu mesa.</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Disfruta de la máxima frescura y calidad de Chocolates Para Ti con envíos directos desde nuestra planta en Sucre a todo Bolivia.
+          </p>
+          
+          <div class="hero-cta-group">
+            <a href="#catalogo" class="btn btn-primary">
+              <span>Explorar Catálogo</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#b2b" class="btn btn-secondary">
+              <span>Cotización Corporativa</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+                <path d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm3 1h6v2H7V5zm6 4H7v2h6V9zm-6 4h6v2H7v-2z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Puntos de Confianza -->
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">⭐</span>
+              <div>
+                <strong>100% Cacao Fino</strong>
+                <small>Receta artesanal desde 1989</small>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">🏭</span>
+              <div>
+                <strong>Fábrica Matriz</strong>
+                <small>Despacho directo desde Sucre</small>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon" aria-hidden="true">⚡</span>
+              <div>
+                <strong>Pago Exprés</strong>
+                <small>QR Simple en &lt;10 seg</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arte e Ilustración Visual del Hero -->
+        <div class="hero-visual">
+          <div class="visual-card">
+            <!-- Ilustración SVG artesanal de alta fidelidad: Caja de Bombones y Tabletas -->
+            <svg class="hero-illustration-svg" viewBox="0 0 520 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración artesanal de finos bombones y chocolates de Sucre">
+              <defs>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#E5C358"/>
+                  <stop offset="50%" stop-color="#C9A227"/>
+                  <stop offset="100%" stop-color="#9C7714"/>
+                </linearGradient>
+                <linearGradient id="chocoDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#4E342E"/>
+                  <stop offset="100%" stop-color="#271815"/>
+                </linearGradient>
+                <linearGradient id="chocoMilkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#795548"/>
+                  <stop offset="100%" stop-color="#4E342E"/>
+                </linearGradient>
+                <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3E2723"/>
+                  <stop offset="100%" stop-color="#241512"/>
+                </linearGradient>
+                <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+                  <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#1A0D0A" flood-opacity="0.35"/>
+                </filter>
+              </defs>
+
+              <!-- Sombra base -->
+              <ellipse cx="260" cy="385" rx="210" ry="25" fill="#1B0C09" fill-opacity="0.4" filter="blur(12px)"/>
+
+              <!-- Caja de Regalo Premium Rectangular con esquinas redondeadas -->
+              <g filter="url(#softShadow)">
+                <rect x="70" y="90" width="380" height="270" rx="20" fill="url(#boxGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+                <!-- Ribetes Dorados Artesanales -->
+                <rect x="85" y="105" width="350" height="240" rx="14" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" stroke-dasharray="8 4"/>
+                
+                <!-- Separadores internos para bombones -->
+                <line x1="195" y1="115" x2="195" y2="335" stroke="#5D4037" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="325" y1="115" x2="325" y2="335" stroke="#5D4037" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="95" y1="225" x2="425" y2="225" stroke="#5D4037" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+                <!-- Bombón 1: Trufa Redonda con destello dorado -->
+                <g transform="translate(140, 170)">
+                  <ellipse cx="0" cy="5" rx="36" ry="10" fill="#140806" opacity="0.4"/>
+                  <circle cx="0" cy="0" r="32" fill="url(#chocoDarkGrad)"/>
+                  <path d="M-15 -18 C -5 -28, 15 -12, 10 -2" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <circle cx="-10" cy="-12" r="2" fill="#E5C358"/>
+                  <circle cx="6" cy="-8" r="2.5" fill="#E5C358"/>
+                </g>
+
+                <!-- Bombón 2: Corazón artesanal de chocolate blanco y bordeaux -->
+                <g transform="translate(260, 170)">
+                  <ellipse cx="0" cy="6" rx="34" ry="9" fill="#140806" opacity="0.4"/>
+                  <path d="M0 16 C -24 0, -28 -20, -14 -26 C -3 -30, 0 -18, 0 -18 C 0 -18, 3 -30, 14 -26 C 28 -20, 24 0, 0 16 Z" fill="#8E1B2E"/>
+                  <path d="M0 13 C -18 0, -22 -16, -11 -21 C -2 -24, 0 -14, 0 -14 C 0 -14, 2 -24, 11 -21 C 22 -16, 18 0, 0 13 Z" fill="#A5283D"/>
+                  <path d="M-6 -10 Q 0 -18 6 -10" stroke="#FFF8E1" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </g>
+
+                <!-- Bombón 3: Pirámide de Gianduja y Almendras -->
+                <g transform="translate(380, 170)">
+                  <ellipse cx="0" cy="5" rx="34" ry="9" fill="#140806" opacity="0.4"/>
+                  <path d="M0 -30 L28 10 L-28 10 Z" fill="url(#chocoMilkGrad)"/>
+                  <path d="M0 -30 L28 10 L0 16 Z" fill="url(#chocoDarkGrad)"/>
+                  <circle cx="0" cy="-5" r="4" fill="#C9A227"/>
+                </g>
+
+                <!-- Bombón 4: Lingote Cacao Puro 70% -->
+                <g transform="translate(140, 280)">
+                  <ellipse cx="0" cy="5" rx="38" ry="10" fill="#140806" opacity="0.4"/>
+                  <rect x="-30" y="-18" width="60" height="36" rx="6" fill="url(#chocoDarkGrad)" stroke="#5D4037"/>
+                  <line x1="-22" y1="-5" x2="22" y2="-5" stroke="url(#goldGrad)" stroke-width="1.5"/>
+                  <text x="0" y="6" font-family="'Playfair Display', serif" font-size="10" fill="#E5C358" font-weight="bold" text-anchor="middle">70% CACAO</text>
+                </g>
+
+                <!-- Bombón 5: Flor Colonial de Sucre -->
+                <g transform="translate(260, 280)">
+                  <ellipse cx="0" cy="5" rx="34" ry="9" fill="#140806" opacity="0.4"/>
+                  <circle cx="0" cy="0" r="26" fill="url(#chocoMilkGrad)"/>
+                  <circle cx="-10" cy="-10" r="9" fill="#C9A227" opacity="0.75"/>
+                  <circle cx="10" cy="-10" r="9" fill="#C9A227" opacity="0.75"/>
+                  <circle cx="-10" cy="10" r="9" fill="#C9A227" opacity="0.75"/>
+                  <circle cx="10" cy="10" r="9" fill="#C9A227" opacity="0.75"/>
+                  <circle cx="0" cy="0" r="10" fill="#3E2723"/>
+                  <circle cx="0" cy="0" r="4" fill="#FFF8E1"/>
+                </g>
+
+                <!-- Bombón 6: Esfera de Maracuyá Silvestre -->
+                <g transform="translate(380, 280)">
+                  <ellipse cx="0" cy="5" rx="35" ry="9" fill="#140806" opacity="0.4"/>
+                  <circle cx="0" cy="0" r="28" fill="url(#chocoDarkGrad)"/>
+                  <path d="M-18 6 C -8 -16, 12 -2, 20 -12" stroke="#FFF8E1" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <circle cx="0" cy="-4" r="3" fill="#E5C358"/>
+                </g>
+
+              </g>
+
+              <!-- Cinta de Regalo Satinada y Lazo Dorado -->
+              <path d="M260 90 L260 70 C240 45 210 50 220 75 C230 100 260 90 260 90 Z" fill="url(#goldGrad)"/>
+              <path d="M260 90 L260 70 C280 45 310 50 300 75 C290 100 260 90 260 90 Z" fill="url(#goldGrad)"/>
+              <circle cx="260" cy="85" r="12" fill="#9C7714"/>
+              <circle cx="260" cy="85" r="8" fill="url(#goldGrad)"/>
+
+              <!-- Sello Flotante "Garantía Fábrica Sucre" -->
+              <g transform="translate(435, 115)">
+                <circle cx="0" cy="0" r="42" fill="#8E1B2E" stroke="#C9A227" stroke-width="2"/>
+                <circle cx="0" cy="0" r="37" fill="none" stroke="#FFF8E1" stroke-width="1" stroke-dasharray="4 2"/>
+                <text x="0" y="-8" font-family="'Poppins', sans-serif" font-size="8.5" fill="#FFF8E1" font-weight="600" text-anchor="middle">ORIGEN</text>
+                <text x="0" y="8" font-family="'Playfair Display', serif" font-size="13" fill="#E5C358" font-weight="bold" text-anchor="middle">SUCRE</text>
+                <text x="0" y="22" font-family="'Poppins', sans-serif" font-size="7.5" fill="#FFF8E1" text-anchor="middle">DIRECTO PLANTA</text>
+              </g>
+            </svg>
+
+            <!-- Tarjeta Flotante Informativa -->
+            <div class="floating-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#C9A227" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-title">Envío Express Bolivia</span>
+                <span class="stat-highlight">24-48 hrs con Courier Certificado</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 3. CATÁLOGO DESTACADO (LÍNEAS DE PRODUCTO)                -->
+    <!-- ========================================================= -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Colección Exclusiva</span>
+          <h2 class="section-title">Catálogo Destacado</h2>
+          <p class="section-description">
+            Elaborados artesanalmente en Sucre con cacao boliviano de la más alta pureza. Selecciona tu línea preferida y recibe la frescura inigualable en tu hogar.
+          </p>
+        </div>
+
+        <!-- Barra de Filtros por Categoría -->
+        <div class="filter-bar" role="tablist" aria-label="Filtrar catálogo por categoría">
+          <button class="filter-btn active" data-category="todos" role="tab" aria-selected="true">
+            Todos
+          </button>
+          <button class="filter-btn" data-category="artesanales" role="tab" aria-selected="false">
+            Chocolates Artesanales
+          </button>
+          <button class="filter-btn" data-category="bombones" role="tab" aria-selected="false">
+            Bombones
+          </button>
+          <button class="filter-btn" data-category="tabletas" role="tab" aria-selected="false">
+            Tabletas y Barras
+          </button>
+          <button class="filter-btn" data-category="corporativos" role="tab" aria-selected="false">
+            Regalos Corporativos
+          </button>
+          <button class="filter-btn" data-category="especiales" role="tab" aria-selected="false">
+            Ediciones Especiales
+          </button>
+        </div>
+
+        <!-- Cuadrícula Dinámica de Productos -->
+        <div class="products-grid" id="productsGrid" aria-live="polite">
+          <!-- Se renderiza dinámicamente mediante script.js -->
+        </div>
+
+        <!-- Banner de Ayuda de Compra Rápida -->
+        <div class="catalog-footer-banner">
+          <div class="banner-content">
+            <h3>¿Buscas un pedido al por mayor o personalizado para tu empresa?</h3>
+            <p>Contamos con precios de fábrica y empaques grabados con tu logotipo institucional.</p>
+          </div>
+          <a href="#b2b" class="btn btn-gold">Cotizar para Empresas</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 4. PROPUESTA DE VALOR Y EXPERIENCIA OMNICANAL             -->
+    <!-- ========================================================= -->
+    <section class="value-prop-section" id="propuesta-valor">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">¿Por qué ChocoTi-Digital?</span>
+          <h2 class="section-title">Experiencia Omnicanal y Garantía de Fábrica</h2>
+          <p class="section-description">
+            Conectamos directamente nuestra planta de producción en Sucre con tu mesa, garantizando una experiencia de compra fluida, segura y transparente.
+          </p>
+        </div>
+
+        <div class="value-grid">
+          
+          <!-- Tarjeta 1: Pago Exprés QR Simple -->
+          <div class="value-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 48 48" class="value-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="36" height="36" rx="8" fill="#FFF8E1" stroke="#C9A227" stroke-width="2"/>
+                <!-- Ícono genérico de código QR y rayo de velocidad -->
+                <rect x="12" y="12" width="10" height="10" rx="2" fill="#3E2723"/>
+                <rect x="26" y="12" width="10" height="10" rx="2" fill="#3E2723"/>
+                <rect x="12" y="26" width="10" height="10" rx="2" fill="#3E2723"/>
+                <circle cx="31" cy="31" r="5" fill="#8E1B2E"/>
+                <path d="M31 28L31 31L33 33" stroke="#FFF8E1" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Pago Exprés con QR Simple</h3>
+            <p class="card-text">
+              Confirmación automática de pago en <strong>menos de 10 segundos</strong>. Compatible con cualquier aplicación de banca móvil en Bolivia, sin comisiones adicionales.
+            </p>
+            <div class="card-highlight-badge">
+              <span class="icon">⚡</span> Confirmación &lt;10s
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Envíos en Tiempo Real -->
+          <div class="value-card featured">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 48 48" class="value-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" fill="#FFF8E1" stroke="#C9A227" stroke-width="2"/>
+                <!-- Ícono genérico de envío y ruta de tracking -->
+                <path d="M12 28L18 20L28 26L36 16" stroke="#8E1B2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="28" r="3" fill="#3E2723"/>
+                <circle cx="36" cy="16" r="4" fill="#C9A227"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Envíos con Seguimiento en Tiempo Real</h3>
+            <p class="card-text">
+              Despachamos desde Sucre con empresas de courier certificadas. Monitorea cada etapa del viaje con alertas digitales por WhatsApp y correo electrónico.
+            </p>
+            <div class="card-highlight-badge">
+              <span class="icon">📦</span> Trazabilidad Nacional
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Frescura Directa de Fábrica -->
+          <div class="value-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 48 48" class="value-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="10" width="32" height="30" rx="4" fill="#FFF8E1" stroke="#C9A227" stroke-width="2"/>
+                <!-- Ícono genérico de fábrica y sello de calidad -->
+                <path d="M14 34V22L20 26V22L26 26V16L34 22V34H14Z" fill="#3E2723"/>
+                <circle cx="24" cy="30" r="3" fill="#C9A227"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Frescura y Calidad Directa de Fábrica</h3>
+            <p class="card-text">
+              Sin intermediarios ni depósitos prolongados. Tus chocolates salen directamente de nuestra sala de moldeado y templado en Sucre con empaque térmico protector.
+            </p>
+            <div class="card-highlight-badge">
+              <span class="icon">✨</span> Garantía de Origen
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 5. SECCIÓN "CÓMO FUNCIONA" (4 PASOS)                      -->
+    <!-- ========================================================= -->
+    <section class="how-it-works-section" id="como-funciona">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Proceso Simple y Seguro</span>
+          <h2 class="section-title">¿Cómo Funciona ChocoTi-Digital?</h2>
+          <p class="section-description">
+            Comprar los chocolates más prestigiosos de Bolivia nunca fue tan sencillo. Cuatro pasos desde la comodidad de tu hogar.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <!-- Paso 1 -->
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#C9A227" stroke-width="2">
+                <circle cx="16" cy="16" r="12"/>
+                <path d="M12 16l3 3 5-6"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Elige tu chocolate</h3>
+            <p class="step-desc">
+              Explora nuestra selecta variedad de bombones, tabletas finas y cajas artesanales preparadas con recetas sucrenses.
+            </p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#C9A227" stroke-width="2">
+                <rect x="6" y="6" width="20" height="20" rx="4"/>
+                <path d="M12 12h3v3h-3zM17 12h3v3h-3zM12 17h3v3h-3z"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Paga con QR Simple</h3>
+            <p class="step-desc">
+              Genera tu código QR instantáneo. Escanéalo desde la app de tu banco favorito en segundos con validación inmediata.
+            </p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#C9A227" stroke-width="2">
+                <path d="M6 10l10-6 10 6v12l-10 6-10-6V10z"/>
+                <path d="M16 4v24M6 10l10 6 10-6"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Preparamos tu pedido</h3>
+            <p class="step-desc">
+              En nuestra fábrica de Sucre empacamos tus chocolates con aislamiento térmico y sellos de seguridad inviolables.
+            </p>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <div class="step-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#C9A227" stroke-width="2">
+                <path d="M4 18h16M20 18l4-6h6v10h-2M8 24a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM24 24a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Sigue tu envío</h3>
+            <p class="step-desc">
+              Recibe tu código de guía y monitorea la ruta en vivo del courier hasta la puerta de tu domicilio en cualquier ciudad.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 6. SEGUIMIENTO DE PEDIDO                                  -->
+    <!-- ========================================================= -->
+    <section class="tracking-section" id="seguimiento">
+      <div class="container">
+        
+        <div class="tracking-card-container">
+          
+          <div class="tracking-header text-center">
+            <span class="section-tag">Rastreo de Envíos</span>
+            <h2 class="section-title">Seguimiento de Pedido en Tiempo Real</h2>
+            <p class="section-description">
+              Ingresa el código de guía asignado a tu compra para consultar la ubicación exacta y el estado de tu encomienda desde Sucre.
+            </p>
+          </div>
+
+          <!-- Formulario de Búsqueda de Tracking -->
+          <div class="tracking-search-box">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" id="trackingInput" class="tracking-input" placeholder="Ej: SUC-8921 ó SUC-4050..." aria-label="Número de guía o seguimiento">
+            </div>
+            <button type="button" id="trackingBtn" class="btn btn-primary">
+              <span>Rastrear Pedido</span>
+            </button>
+          </div>
+
+          <!-- Códigos sugeridos de prueba -->
+          <div class="tracking-samples">
+            <span class="samples-label">Códigos de prueba rápidos:</span>
+            <button class="sample-tag-btn" data-code="SUC-8921">SUC-8921 (En tránsito a La Paz)</button>
+            <button class="sample-tag-btn" data-code="SUC-4050">SUC-4050 (En empaque en Sucre)</button>
+            <button class="sample-tag-btn" data-code="SUC-7712">SUC-7712 (Entregado en Santa Cruz)</button>
+          </div>
+
+          <!-- Contenedor del Resultado del Rastreo -->
+          <div class="tracking-result" id="trackingResult" style="display: none;">
+            
+            <div class="result-summary">
+              <div class="summary-col">
+                <span class="summary-label">Código de Envío</span>
+                <span class="summary-value" id="trackCodeDisplay">SUC-8921</span>
+              </div>
+              <div class="summary-col">
+                <span class="summary-label">Destino</span>
+                <span class="summary-value" id="trackDestDisplay">La Paz - Sopocachi</span>
+              </div>
+              <div class="summary-col">
+                <span class="summary-label">Courier Responsable</span>
+                <span class="summary-value" id="trackCourierDisplay">Courier Express Nacional</span>
+              </div>
+              <div class="summary-col">
+                <span class="summary-label">Estado Actual</span>
+                <span class="status-pill in-transit" id="trackStatusPill">En Tránsito Interdepartamental</span>
+              </div>
+            </div>
+
+            <!-- Stepper Visual Interactivo -->
+            <div class="tracking-stepper" id="trackingStepper">
+              <div class="stepper-step completed" id="step1">
+                <div class="step-circle">✓</div>
+                <div class="step-label">Orden Confirmada</div>
+                <div class="step-time">Sucre • 08:30 AM</div>
+              </div>
+              <div class="stepper-step completed" id="step2">
+                <div class="step-circle">✓</div>
+                <div class="step-label">Empaque Térmico en Planta</div>
+                <div class="step-time">Sucre • 11:15 AM</div>
+              </div>
+              <div class="stepper-step active" id="step3">
+                <div class="step-circle">🚚</div>
+                <div class="step-label">Despachado con Courier</div>
+                <div class="step-time">En Ruta Principal</div>
+              </div>
+              <div class="stepper-step" id="step4">
+                <div class="step-circle">4</div>
+                <div class="step-label">Arribo a Ciudad Destino</div>
+                <div class="step-time">Pendiente</div>
+              </div>
+              <div class="stepper-step" id="step5">
+                <div class="step-circle">5</div>
+                <div class="step-label">Entregado</div>
+                <div class="step-time">Firma Requerida</div>
+              </div>
+            </div>
+
+            <!-- Registro de Eventos Recientes -->
+            <div class="tracking-history-log">
+              <h4>Historial de Registro</h4>
+              <ul class="history-list" id="trackingHistoryList">
+                <li>
+                  <span class="hist-time">Hoy - 14:20</span>
+                  <span class="hist-text">Envío en tránsito interdepartamental hacia terminal de distribución central.</span>
+                </li>
+                <li>
+                  <span class="hist-time">Hoy - 11:15</span>
+                  <span class="hist-text">Inspección de calidad completada en planta matriz Sucre. Empaque climatizado sellado.</span>
+                </li>
+                <li>
+                  <span class="hist-time">Hoy - 08:30</span>
+                  <span class="hist-text">Pago con QR Simple validado exitosamente. Orden enviada a producción.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 7. PORTAL CORPORATIVO B2B                                 -->
+    <!-- ========================================================= -->
+    <section class="b2b-section" id="b2b">
+      <div class="container">
+        
+        <div class="b2b-wrapper">
+          
+          <div class="b2b-info">
+            <span class="section-tag tag-b2b">Atención Empresarial B2B</span>
+            <h2 class="b2b-title">Soluciones Corporativas y Pedidos al por Mayor</h2>
+            
+            <p class="b2b-highlight-quote">
+              "Eleva tus regalos empresariales con empaques personalizados, facturación en línea NIT y atención preferencial para eventos e instituciones."
+            </p>
+            
+            <p class="b2b-description">
+              Ofrecemos lotes corporativos de bombones y chocolates con relieve de tu logotipo empresarial, cajas de madera tallada o cartón rígido con acabado dorado, y despacho programado a nivel nacional.
+            </p>
+
+            <div class="b2b-benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-bullet">✓</div>
+                <div>
+                  <strong>Personalización de Marca:</strong>
+                  <p>Moldeado de chocolates con tu imagotipo y cintas satinadas corporativas.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-bullet">✓</div>
+                <div>
+                  <strong>Facturación Oficial SIN con NIT:</strong>
+                  <p>Factura electrónica inmediata según normativa tributaria boliviana vigente.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-bullet">✓</div>
+                <div>
+                  <strong>Descuentos Escalonados por Volumen:</strong>
+                  <p>Tarifas directas de fábrica para pedidos desde 50 unidades hasta grandes volúmenes.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-bullet">✓</div>
+                <div>
+                  <strong>Ejecutivo de Cuenta Dedicado:</strong>
+                  <p>Asesoramiento personalizado en degustación, selección y logística de entrega.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Formulario de Cotización B2B -->
+          <div class="b2b-form-card">
+            <div class="form-card-header">
+              <h3>Solicitar Cotización Corporativa</h3>
+              <p>Respuesta formal con propuesta digital en menos de 24 horas hábiles.</p>
+            </div>
+
+            <form id="b2bForm" class="b2b-form" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="b2bName">Nombre del Contacto *</label>
+                  <input type="text" id="b2bName" class="form-control" placeholder="Ej. Carlos Mendoza" required>
+                  <span class="field-error" id="err-b2bName">Por favor ingresa tu nombre completo.</span>
+                </div>
+                <div class="form-group">
+                  <label for="b2bCompany">Empresa o Institución *</label>
+                  <input type="text" id="b2bCompany" class="form-control" placeholder="Ej. Banco Fortaleza S.A." required>
+                  <span class="field-error" id="err-b2bCompany">Ingresa el nombre de la empresa.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="b2bNit">NIT o Cédula para Factura *</label>
+                  <input type="text" id="b2bNit" class="form-control" placeholder="Ej. 1028475024" required>
+                  <span class="field-error" id="err-b2bNit">Ingresa un NIT o CI válido.</span>
+                </div>
+                <div class="form-group">
+                  <label for="b2bPhone">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="b2bPhone" class="form-control" placeholder="Ej. 72894512" required>
+                  <span class="field-error" id="err-b2bPhone">Ingresa un número telefónico válido (8 dígitos).</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="b2bEmail">Correo Corporativo *</label>
+                  <input type="email" id="b2bEmail" class="form-control" placeholder="ejemplo@empresa.com.bo" required>
+                  <span class="field-error" id="err-b2bEmail">Ingresa un correo electrónico corporativo válido.</span>
+                </div>
+                <div class="form-group">
+                  <label for="b2bQuantity">Cantidad Estimada (Cajas/Lote)</label>
+                  <select id="b2bQuantity" class="form-control">
+                    <option value="50-100">50 a 100 unidades</option>
+                    <option value="101-300">101 a 300 unidades</option>
+                    <option value="301-500">301 a 500 unidades</option>
+                    <option value="500+">Más de 500 unidades (Licitación)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Carga de Logotipo Institucional -->
+              <div class="form-group">
+                <label>Logotipo Institucional (Opcional para previsualización de empaque)</label>
+                <div class="upload-dropzone" id="logoDropzone">
+                  <input type="file" id="b2bLogoInput" accept="image/*" class="visually-hidden">
+                  <div class="dropzone-content" id="dropzoneEmpty">
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#C9A227" stroke-width="1.8">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                    </svg>
+                    <p><strong>Haz clic para cargar</strong> o arrastra aquí el logotipo (PNG, JPG o SVG)</p>
+                    <small>Se utilizará para diseñar la maqueta digital del regalo corporativo.</small>
+                  </div>
+                  <div class="dropzone-preview" id="dropzonePreview" style="display: none;">
+                    <img id="logoPreviewImg" src="" alt="Vista previa de logotipo corporativo cargado">
+                    <div class="preview-info">
+                      <span id="logoFileName">logo-empresa.png</span>
+                      <button type="button" id="removeLogoBtn" class="btn-remove-logo">Quitar logo</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mensaje o Requerimientos -->
+              <div class="form-group">
+                <label for="b2bMessage">Detalles del Requerimiento o Evento *</label>
+                <textarea id="b2bMessage" class="form-control" rows="3" placeholder="Describe fecha estimada de entrega, tipo de evento (Navidad, Aniversario, etc.) y preferencias..." required></textarea>
+                <span class="field-error" id="err-b2bMessage">Por favor coméntanos los detalles del requerimiento.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="b2bSubmitBtn">
+                <span>Enviar Solicitud de Cotización</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+
+            </form>
+
+            <!-- Confirmación Exitosa de Cotización -->
+            <div class="b2b-success-alert" id="b2bSuccessAlert" style="display: none;">
+              <div class="success-icon">✓</div>
+              <h4>¡Solicitud de Cotización Registrada con Éxito!</h4>
+              <p>Hemos asignado a tu empresa el código de solicitud: <strong id="quoteCodeDisplay">COT-B2B-8941</strong>.</p>
+              <p class="success-subtext">Un asesor corporativo de Chocolates Para Ti en Sucre se comunicará contigo al teléfono y correo indicados en menos de 24 horas.</p>
+              <button type="button" class="btn btn-secondary btn-sm" id="newQuoteBtn">Registrar otra consulta</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 8. MÉTODOS DE PAGO Y COBERTURA                            -->
+    <!-- ========================================================= -->
+    <section class="payment-coverage-section" id="cobertura">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Transacciones Seguras & Alcance</span>
+          <h2 class="section-title">Métodos de Pago y Cobertura Nacional</h2>
+          <p class="section-description">
+            Opciones de cobro digital seguras y homologadas, con logística de frío y despacho rápido desde Sucre a las 9 capitales de departamento de Bolivia.
+          </p>
+        </div>
+
+        <div class="dual-columns-grid">
+          
+          <!-- Columna: Métodos de Pago (Íconos Genéricos según Requerimiento) -->
+          <div class="info-panel-box">
+            <h3 class="panel-box-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C9A227" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+              Métodos de Pago Aceptados
+            </h3>
+            <p class="panel-box-desc">
+              Paga de manera confiable y transparente mediante plataformas bancarias nacionales:
+            </p>
+
+            <div class="payment-methods-grid">
+              
+              <!-- Pago QR Simple (Genérico) -->
+              <div class="payment-card">
+                <div class="payment-icon-symbol">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#C9A227" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"/>
+                    <rect x="14" y="3" width="7" height="7"/>
+                    <rect x="3" y="14" width="7" height="7"/>
+                    <rect x="14" y="14" width="7" height="7"/>
+                  </svg>
+                </div>
+                <div class="payment-details">
+                  <strong>QR Pago Simple</strong>
+                  <span>Cobro inmediato en &lt;10s desde cualquier app bancaria de Bolivia</span>
+                </div>
+              </div>
+
+              <!-- Transferencia Bancaria Directa (Genérico) -->
+              <div class="payment-card">
+                <div class="payment-icon-symbol">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#C9A227" stroke-width="2">
+                    <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 2l10 8H2l10-8z"/>
+                  </svg>
+                </div>
+                <div class="payment-details">
+                  <strong>Transferencias Bancarias Directas</strong>
+                  <span>Cuentas corrientes en Banco Unión, BCP, BNB, Banco Mercantil y Bisa</span>
+                </div>
+              </div>
+
+              <!-- Tarjetas Red Enlace / ATC (Genérico) -->
+              <div class="payment-card">
+                <div class="payment-icon-symbol">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#C9A227" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                    <line x1="1" y1="10" x2="23" y2="10"/>
+                  </svg>
+                </div>
+                <div class="payment-details">
+                  <strong>Tarjetas de Débito y Crédito</strong>
+                  <span>Habilitadas por redes nacionales Red Enlace / ATC (Visa y Mastercard)</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Banner Promocional de QR -->
+            <div class="qr-promo-banner">
+              <span class="qr-promo-icon">⚡</span>
+              <p><strong>CTA de Pago QR:</strong> "Paga al instante con QR Pago Simple de forma rápida y 100% segura."</p>
+            </div>
+          </div>
+
+          <!-- Columna: Cobertura Territorial (Sucre vs Resto de Bolivia) -->
+          <div class="info-panel-box">
+            <h3 class="panel-box-title">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C9A227" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Indicador de Cobertura y Tiempos
+            </h3>
+            <p class="panel-box-desc">
+              Logística coordinada desde la fábrica en Sucre para conservar la textura y calidad intactas:
+            </p>
+
+            <div class="coverage-zones">
+              
+              <!-- Zona Sucre Local -->
+              <div class="zone-card local">
+                <div class="zone-badge">Local Matriz</div>
+                <h4>Sucre y Gran Sucre</h4>
+                <div class="zone-specs">
+                  <div class="spec-item">
+                    <span class="spec-label">Tiempo de Entrega:</span>
+                    <span class="spec-value">Mismo día (1 a 3 horas)</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Costo de Envío:</span>
+                    <span class="spec-value highlight">¡GRATIS en pedidos &gt; 50 Bs!</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Modalidad:</span>
+                    <span class="spec-value">Reparto propio directo de planta</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zona Resto de Bolivia -->
+              <div class="zone-card national">
+                <div class="zone-badge badge-bordeaux">Nacional Courier</div>
+                <h4>Resto de Bolivia (8 Departamentos)</h4>
+                <div class="zone-specs">
+                  <div class="spec-item">
+                    <span class="spec-label">Ciudades Principales:</span>
+                    <span class="spec-value">La Paz, Santa Cruz, Cochabamba, Oruro, Potosí, Tarija, Trinidad, Cobija</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Tiempo de Entrega:</span>
+                    <span class="spec-value">24 a 48 horas certificadas</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Acondicionamiento:</span>
+                    <span class="spec-value">Cajas térmicas protectoras de calor</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 9. EQUIPO DEL PROYECTO ACADÉMICO                          -->
+    <!-- ========================================================= -->
+    <section class="team-section" id="equipo">
+      <div class="container">
+        
+        <div class="team-header text-center">
+          <span class="academic-badge">Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca</span>
+          <h2 class="section-title">Equipo de Desarrollo ChocoTi-Digital</h2>
+          <p class="team-subtitle">
+            Carrera de Ingeniería de Sistemas • Facultad de Tecnología • Sucre, Bolivia
+          </p>
+          <div class="academic-tag">Proyecto académico 2026</div>
+        </div>
+
+        <div class="team-grid">
+          
+          <!-- Integrante 1 -->
+          <div class="team-member-card">
+            <div class="member-avatar">
+              <span class="avatar-initials">MM</span>
+            </div>
+            <h3 class="member-name">Marly Medrano Valdez</h3>
+            <p class="member-role">Ingeniería de Sistemas</p>
+            <span class="member-inst">USFX - 2026</span>
+          </div>
+
+          <!-- Integrante 2 -->
+          <div class="team-member-card">
+            <div class="member-avatar">
+              <span class="avatar-initials">AM</span>
+            </div>
+            <h3 class="member-name">Angela Micaela Miranda Coro</h3>
+            <p class="member-role">Ingeniería de Sistemas</p>
+            <span class="member-inst">USFX - 2026</span>
+          </div>
+
+          <!-- Integrante 3 -->
+          <div class="team-member-card">
+            <div class="member-avatar">
+              <span class="avatar-initials">EA</span>
+            </div>
+            <h3 class="member-name">Eli Mabel Acsama Cari</h3>
+            <p class="member-role">Ingeniería de Sistemas</p>
+            <span class="member-inst">USFX - 2026</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- 10. FOOTER                                                -->
+  <!-- ========================================================= -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Columna 1: Identidad y Sello -->
+        <div class="footer-col brand-col">
+          <div class="footer-brand">
+            <div class="footer-logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 36 36" width="36" height="36" fill="none">
+                <path d="M18 2L5 7V17C5 25.5 10.5 32 18 34C25.5 32 31 25.5 31 17V7L18 2Z" fill="#3E2723" stroke="#C9A227" stroke-width="2"/>
+                <circle cx="18" cy="18" r="5" fill="#C9A227"/>
+              </svg>
+            </div>
+            <div>
+              <span class="footer-brand-title">Chocolates Para Ti</span>
+              <span class="footer-brand-sub">ChocoTi-Digital Omnicanal</span>
+            </div>
+          </div>
+          <p class="footer-text">
+            Planta Matriz y Tienda Central en la histórica ciudad de Sucre, Chuquisaca, Bolivia. Artesanía chocolatera con los más selectos granos de cacao boliviano.
+          </p>
+          <div class="footer-social-links">
+            <a href="#contacto" class="social-icon" aria-label="Facebook Chocolates Para Ti">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#contacto" class="social-icon" aria-label="Instagram Chocolates Para Ti">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#contacto" class="social-icon" aria-label="WhatsApp Atención Directa">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo Minorista</a></li>
+            <li><a href="#propuesta-valor">Experiencia Omnicanal</a></li>
+            <li><a href="#como-funciona">Cómo Comprar</a></li>
+            <li><a href="#seguimiento">Seguimiento en Vivo</a></li>
+            <li><a href="#b2b">Portal Corporativo B2B</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Cumplimiento Fiscal y Facturación SIN -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Facturación Digital</h4>
+          <div class="sin-compliance-box">
+            <div class="sin-badge">SIN Bolivia</div>
+            <p><strong>Facturación Electrónica en Línea</strong></p>
+            <p class="sin-desc">
+              Cumplimiento estricto con las Resoluciones Normativas de Directorio (RND) del Servicio de Impuestos Nacionales de Bolivia. Emisión con Código Único de Facturación (CUF).
+            </p>
+          </div>
+          <ul class="footer-links terms-links">
+            <li><a href="#contacto">Aviso de Privacidad y Cookies</a></li>
+            <li><a href="#contacto">Términos de Envíos y Reembolsos</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Ubicación y Contacto Directo -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Planta Matriz Sucre</h4>
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <span>Calle Calvo / Parque Bolívar, Sucre, Bolivia</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <span>Central Telefónica: +591 (4) 645-1234</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉️</span>
+              <span>ventas@chocoti-digital.bo</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">⏰</span>
+              <span>Lunes a Sábado: 08:30 - 19:30</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nota Discreta Académica Requerida y Copyright -->
+      <div class="footer-bottom">
+        <p class="academic-disclaimer">
+          Precios, tiempos de entrega y datos de ejemplo con fines académicos; no representan información oficial de Chocolates Para Ti.
+        </p>
+        <p class="copyright-text">
+          &copy; 2026 ChocoTi-Digital • Proyecto Académico de Ingeniería de Sistemas, USFX. Desarrollado por Marly Medrano Valdez, Angela Micaela Miranda Coro y Eli Mabel Acsama Cari.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- SIDE DRAWER: CARRITO DE COMPRAS INTERACTIVO               -->
+  <!-- ========================================================= -->
+  <div class="cart-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    
+    <div class="cart-drawer-header">
+      <div class="cart-header-title">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C9A227" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <h3>Tu Carrito Dulce</h3>
+      </div>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Cerrar carrito">&times;</button>
+    </div>
+
+    <!-- Lista de Productos en el Carrito -->
+    <div class="cart-drawer-items" id="cartItemsContainer">
+      <!-- Se inyecta dinámicamente con JS -->
+    </div>
+
+    <!-- Resumen y Checkout del Carrito -->
+    <div class="cart-drawer-footer" id="cartFooter">
+      
+      <!-- Selector de Zona de Envío -->
+      <div class="shipping-selector">
+        <label for="shippingSelect">Zona de Despacho:</label>
+        <select id="shippingSelect" class="form-control-sm">
+          <option value="sucre">Sucre Local (Gratis en compras &gt; 50 Bs)</option>
+          <option value="nacional">Resto de Bolivia (+ Bs. 25 Courier)</option>
+        </select>
+      </div>
+
+      <!-- Detalle de Importes -->
+      <div class="cart-summary-line">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">Bs. 0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Costo de Envío:</span>
+        <span id="cartShipping">Bs. 0.00</span>
+      </div>
+      <div class="cart-summary-line total">
+        <strong>Total a Pagar:</strong>
+        <strong id="cartTotal">Bs. 0.00</strong>
+      </div>
+
+      <!-- Botón de Proceder al Pago QR Simple -->
+      <button class="btn btn-primary btn-block" id="btnCheckout">
+        <span>Pagar con QR Simple</span>
+        <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+        </svg>
+      </button>
+
+      <button class="btn-clear-cart" id="btnClearCart">Vaciar carrito</button>
+    </div>
+
+  </aside>
+
+  <!-- ========================================================= -->
+  <!-- MODAL: PASARELA DE PAGO QR SIMPLE (<10s)                  -->
+  <!-- ========================================================= -->
+  <div class="qr-modal-overlay" id="qrModalOverlay" aria-hidden="true">
+    <div class="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qrModalTitle">
+      
+      <button class="qr-modal-close" id="qrModalClose" aria-label="Cerrar modal de pago">&times;</button>
+      
+      <div class="qr-modal-header text-center">
+        <div class="qr-icon-emblem">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#C9A227" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+          </svg>
+        </div>
+        <h3 id="qrModalTitle">Pago Exprés con QR Simple</h3>
+        <p class="qr-cta-text">"Paga al instante con QR Pago Simple de forma rápida y 100% segura."</p>
+      </div>
+
+      <div class="qr-modal-body">
+        
+        <!-- Estado Inicial: Mostrando Código QR -->
+        <div id="qrActiveState">
+          <div class="qr-code-display">
+            <!-- Código QR generado en SVG con aspecto auténtico y logotipo genérico central -->
+            <svg class="qr-image-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" fill="#FFFFFF"/>
+              <!-- Ojos de esquina -->
+              <rect x="15" y="15" width="45" height="45" fill="#3E2723"/>
+              <rect x="23" y="23" width="29" height="29" fill="#FFFFFF"/>
+              <rect x="28" y="28" width="19" height="19" fill="#3E2723"/>
+
+              <rect x="140" y="15" width="45" height="45" fill="#3E2723"/>
+              <rect x="148" y="23" width="29" height="29" fill="#FFFFFF"/>
+              <rect x="153" y="28" width="19" height="19" fill="#3E2723"/>
+
+              <rect x="15" y="140" width="45" height="45" fill="#3E2723"/>
+              <rect x="23" y="148" width="29" height="29" fill="#FFFFFF"/>
+              <rect x="28" y="153" width="19" height="19" fill="#3E2723"/>
+
+              <!-- Patrón de módulos de datos -->
+              <g fill="#3E2723">
+                <rect x="70" y="20" width="8" height="8"/><rect x="85" y="20" width="8" height="8"/><rect x="100" y="20" width="8" height="8"/><rect x="115" y="20" width="8" height="8"/>
+                <rect x="70" y="35" width="8" height="8"/><rect x="100" y="35" width="8" height="8"/><rect x="125" y="35" width="8" height="8"/>
+                <rect x="75" y="50" width="8" height="8"/><rect x="90" y="50" width="8" height="8"/><rect x="110" y="50" width="8" height="8"/>
+                <rect x="20" y="75" width="8" height="8"/><rect x="40" y="75" width="8" height="8"/><rect x="60" y="75" width="8" height="8"/><rect x="80" y="75" width="8" height="8"/><rect x="100" y="75" width="8" height="8"/><rect x="120" y="75" width="8" height="8"/><rect x="140" y="75" width="8" height="8"/><rect x="165" y="75" width="8" height="8"/>
+                <rect x="25" y="90" width="8" height="8"/><rect x="50" y="90" width="8" height="8"/><rect x="75" y="90" width="8" height="8"/><rect x="125" y="90" width="8" height="8"/><rect x="150" y="90" width="8" height="8"/>
+                <rect x="30" y="110" width="8" height="8"/><rect x="65" y="110" width="8" height="8"/><rect x="85" y="110" width="8" height="8"/><rect x="115" y="110" width="8" height="8"/><rect x="145" y="110" width="8" height="8"/><rect x="170" y="110" width="8" height="8"/>
+                <rect x="75" y="130" width="8" height="8"/><rect x="95" y="130" width="8" height="8"/><rect x="130" y="130" width="8" height="8"/><rect x="160" y="130" width="8" height="8"/>
+                <rect x="70" y="150" width="8" height="8"/><rect x="100" y="150" width="8" height="8"/><rect x="120" y="150" width="8" height="8"/><rect x="150" y="150" width="8" height="8"/>
+                <rect x="80" y="170" width="8" height="8"/><rect x="110" y="170" width="8" height="8"/><rect x="135" y="170" width="8" height="8"/><rect x="165" y="170" width="8" height="8"/>
+              </g>
+
+              <!-- Insignia Central Cacao Dorada -->
+              <circle cx="100" cy="100" r="18" fill="#FFF8E1" stroke="#C9A227" stroke-width="2"/>
+              <path d="M100 88C97 91 96 95 97 99C98 102 100 104 100 104C100 104 102 102 103 99C104 95 103 91 100 88Z" fill="#C9A227"/>
+            </svg>
+          </div>
+
+          <div class="qr-payment-info text-center">
+            <div class="qr-amount-line">
+              Monto a Pagar: <strong id="qrModalAmount">Bs. 0.00</strong>
+            </div>
+            <div class="qr-countdown">
+              Validación automática en: <span id="qrTimer">10s</span>
+            </div>
+            <p class="qr-hint">
+              Abre tu app bancaria móvil en Bolivia (BCP, BNB, Banco Unión, Mercantil, Bisa, etc.) y escanea este código.
+            </p>
+          </div>
+
+          <div class="qr-actions">
+            <button type="button" class="btn btn-primary btn-block" id="btnSimulateInstantPay">
+              <span>Simular Pago Inmediato</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Estado Confirmado: Pago Aprobado con Éxito -->
+        <div id="qrSuccessState" style="display: none;" class="text-center">
+          <div class="qr-success-check">✓</div>
+          <h4>¡Pago Confirmado Exitosamente!</h4>
+          <p>Tu orden ha sido registrada en el sistema de fábrica en Sucre.</p>
+          
+          <div class="order-receipt-card">
+            <div class="receipt-row">
+              <span>Nro. de Pedido:</span>
+              <strong id="confirmedOrderNum">ORD-2026-9041</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Código de Seguimiento:</span>
+              <strong id="confirmedTrackCode" class="highlight-gold">SUC-9041</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Total Pagado:</span>
+              <span id="confirmedTotal">Bs. 0.00</span>
+            </div>
+            <div class="receipt-row">
+              <span>Factura SIN:</span>
+              <span>Enviada a tu correo con NIT</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-gold btn-block" id="btnDoneOrder">
+            Ir a Seguir Mi Pedido
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Botón Flotante "Volver Arriba" -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Script Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
